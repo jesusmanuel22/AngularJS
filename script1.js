@@ -6,6 +6,14 @@ function AlumnosController($scope){
 	];
 	$scope.Save=function(){
 	$scope.alumnos.push({nombre:$scope.nuevoAlumno.nombre, telefono: $scope.nuevoAlumno.telefono, curso:$scope.nuevoAlumno.curso});
+	$scope.formVisibility=false;
+	console.log($scope.formVisibility)
 }//Si lo ponemos fuera da error, puesto que scope está definido en AlumnosController, por ello tiene que estar dentro de la función para poderse ejecutar
+
+$scope.formVisibility=false;
+$scope.ShowForm=function(){
+	$scope.formVisibility=true;
+	console.log($scope.formVisibility)
+}
 
 }
