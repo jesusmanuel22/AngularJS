@@ -54,6 +54,9 @@ h2{
   font-size:100%;
   font-weight:normal;
 }
+h3{
+	color: #000;
+}
 
 .wrapper{
 	width: 650px;

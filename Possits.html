@@ -24,10 +24,10 @@
 	
 	<br/>
 	<center><button ng-click="ShowForm()" ng-hide="formVisibility">Añadir Possit</button></center>
-	<div ng-show="formVisibility" class="wrapper" >
-		<h2>Añadir un Possit</h2>
-		Titulo: <input type="text" ng-model="nuevoPossit.titulo"></input>
-		Contenido: <input type="text" ng-model="nuevoPossit.contenido"></input>
+	<div ng-show="formVisibility" class="wrapper" style="text-align: center"  >
+		<h3 >Añadir un Possit</h3>
+		<div style="color:#000">Titulo: <input type="text" ng-model="nuevoPossit.titulo"></input></div>
+		<div style="color:#000">Contenido: <input type="text" ng-model="nuevoPossit.contenido"></input></div>
 		<button ng-click="Save()" >Guardar</button>
 
 	</div>-
