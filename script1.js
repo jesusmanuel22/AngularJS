@@ -18,10 +18,10 @@ $scope.ShowForm=function(){
 
 $scope.delete = function (possit) {    
 			if (confirm("Are you sure?"))
-           {     
-				var delposit = $scope.possits[possit];
-				$scope.possits.splice(delposit,1);   
-           }            
+           {
+				//var delposit = $scope.possits[possit];
+				$scope.possits.splice(5,1); 
+           }
 };
 
 }
