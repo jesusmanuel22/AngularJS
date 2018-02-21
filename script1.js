@@ -16,12 +16,13 @@ $scope.ShowForm=function(){
 	console.log($scope.formVisibility)
 }
 
+
 $scope.delete = function (possit) {    
-			if (confirm("Are you sure?"))
+			if (confirm("Do you want delete this Post-it?"))
            {     
-				var delposit = $scope.possits[possit];
+				var delposit = $scope.possits.indexOf(possit);
 				$scope.possits.splice(delposit,1);   
            }            
-};
+}
 
 }
