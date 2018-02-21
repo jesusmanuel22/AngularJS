@@ -1,11 +1,11 @@
 function PossitsController($scope){
 	$scope.possits=[
-			{titulo: "Compra #1", contenido:"Yogurt, Sugar"},
-			{titulo: "Clase #2 ", contenido:"Systems Web Development"},
-			{titulo: "Tarea", contenido:"1234506789"}
+			{title: "Market", content:"Yogurt, Sugar"},
+			{title: "Classes", content:"Systems Web Development"},
+			{title: "Homework", content:"Theory Reports"}
 	];
 	$scope.Save=function(){
-	$scope.possits.push({titulo:$scope.nuevoPossit.titulo, contenido: $scope.nuevoPossit.contenido});
+	$scope.possits.push({title:$scope.nuevoPossit.title, content: $scope.nuevoPossit.content});
 	$scope.formVisibility=false;
 	console.log($scope.formVisibility)
 }//Si lo ponemos fuera da error, puesto que scope está definido en AlumnosController, por ello tiene que estar dentro de la función para poderse ejecutar
