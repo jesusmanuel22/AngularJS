@@ -14,7 +14,7 @@
     <li  ng-repeat="possits in possits">
       <a href="#" ng-click="delete(possits)">
       	
-        	<h2 class="nombre">{{possits.title}}</h2>
+        	<h2 class="nombre">{{possits.title | uppercase}}</h2>
         	<p class="contact-item">{{possits.content}}</p>
     	
       </a>
