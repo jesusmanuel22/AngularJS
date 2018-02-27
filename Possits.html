@@ -11,11 +11,11 @@
 
 	
 	<ul>
-    <li  ng-repeat="possits in possits">
-      <a href="#" ng-click="delete(possits)">
+    <li  ng-repeat="possit in possits">
+      <a href="#" ng-click="delete(possit)">
       	
-        	<h2 class="nombre">{{possits.title | uppercase}}</h2>
-        	<p class="contact-item">{{possits.content}}</p>
+        	<h2 class="nombre">{{possit.title | uppercase}}</h2>
+        	<p class="contact-item">{{possit.content}}</p>
     	
       </a>
     </li>
